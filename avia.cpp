@@ -1,19 +1,22 @@
 // avia.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include"Header.h"
 #include <iostream>
 #include<list>
-#include"Header.h"
 #include<string>
+
 
 int main()
 {
+    std::list<order> j;
     order nOrder("ny", "john", " ", "l;", 1293);
     all smt(nOrder);
+    bool y;
+    std::cin >> y;
     // std::list<order> something;
     // smt.getAllOrders(something);
     nOrder.getOrder(nOrder);
-
+    smt.getAllOrders(j);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
