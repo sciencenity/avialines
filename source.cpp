@@ -16,7 +16,19 @@ order order::getOrder(order toWatch) {
 		<< "name: " << this->name
 		<< "place: " << this->place;
 	return toWatch;
-};
+}
+ std::string order::getAllInfo(order toGet) {
+	/*std::cout << this->date;
+	std::cout << this->initials;
+	std::cout << this->number;
+	std::cout << this->place;
+	std::cout << this->name;*/
+	 std::string datee;
+	 this->date = datee;
+	 std::cout << datee;
+	 std::cout << "---------" << std::endl;
+	 return datee;
+}
 std::list<order> all::addOrder(order toAdd) {
 	allOrders.push_back(toAdd);
 	return allOrders;
@@ -35,13 +47,16 @@ void all::getAllOrders(std::list<order> orders) {
 	std::cout << "amount of all orders: " << orders.size();
 	for (auto iter = orders.begin(); iter != orders.end(); iter++)
 	{
-		print(iter);
-	};
+		//orders.
+		//print(iter);
+	}
 }
+int all::amount;
 all::all(std::list<order> ordersAll) {
 	ordersAll = this->allOrders;
 	this->amount++;
 }
+
 //all all::setOrd(bool y, all toC) {
 //	if (y == true) {
 //		all tCh(order neword);
@@ -65,7 +80,5 @@ all::all(std::list<order> ordersAll) {
 //		//return 0;
 //	}
 //};
-
-
 
 
