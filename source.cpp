@@ -75,6 +75,7 @@ all::all(std::list<order> ordersAll) {
 //		tCh.getAllOrders(f);
 //		return tCh;
 //	}
+
 //	else {
 //		std::cout << "Bye. Thanks";
 //		//return 0;
